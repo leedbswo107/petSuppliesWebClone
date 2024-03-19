@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetSuppiesWeb</title>
+    <link rel="stylesheet" href="./css/my_reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/common.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hd">
+        <!-- .utilHeader -->
+        <div class="utilHeader">
+          <span>
+            Stick to what works: functional and good-looking designs for your
+            pet
+          </span>
+          <div class="person">
+            <a href="#">Sign in</a>
+            <a href="#">Reward</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <!-- .gnb -->
+        <div class="gnb">
+          <nav>
+            <ul>
+              <li><a href="#">shop all</a></li>
+              <li><a href="#">supplies</a></li>
+              <li><a href="#">subscribe</a></li>
+            </ul>
+          </nav>
+          <h1>
+            <a href="#"><img src="./img/logo-01.svg" alt="logo" /></a>
+          </h1>
+          <div class="person">
+            <ul>
+              <li>
+                <a href="#">ABOUT US</a>
+              </li>
+            </ul>
+            <a href="#"><i>search</i></a>
+            <a href="#"><i>bag</i></a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- section mainVisual -->
+        <section class="mainVisual">
+          <div class="mainBanner">
+            <img src="./img/21.png" alt="dog" />
+            <div>
+              <h2>It's<br />Sweater<br />Weather</h2>
+              <span
+                >It's time to bundle up, and we have all the cold-weather
+                essentials your dog needs for warmth, comfort &amp; style</span
+              >
+              <a href="#">Shop Now</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- section brands -->
+        <section class="brands">
+          <div class="brandSlide">
+            <img src="./img/SVG-1.svg" alt="svg1" />
+            <img src="./img/SVG-2.svg" alt="svg2" />
+            <img src="./img/SVG-3.svg" alt="svg3" />
+            <img src="./img/SVG-4.svg" alt="svg4" />
+            <img src="./img/SVG-5.svg" alt="svg5" />
+            <img src="./img/SVG-6.svg" alt="svg6" />
+            <img src="./img/SVG-7.svg" alt="svg7" />
+          </div>
+          <!-- 
+            slide 내부 이미지를 div로 감쌀 필요가 있는가?
+            div 말고 ul 하고 img 를 li 로 감싼다면?
+          -->
+          <strong>Pet Essentials, Modernized</strong>
+          <span
+            >We're a one-stop-shop born to provide a modern, smart experience in
+            pet care. We are here to help your dog feel good, look good, and get
+            more out of life.</span
+          >
+          <!-- .brands > span text-transform: capitalize; -->
+        </section>
+
+        <!-- section newArrivals -->
+        <section class="newArrivals">
+          <div>
+            <span>this month's</span>
+            <h2>New Arrivals</h2>
+            <span>just landed</span>
+          </div>
+          <div class="products">
+            <div class="swiper productSlide">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <figure>
+                    <img src="#" alt="product1" />
+                    <span>New In</span>
+                    <figcaption>
+                      <strong>Signature Collar</strong>
+                      <div class="productColor">
+                        <span>red</span>
+                        <span>yellow</span>
+                        <span>lightblue</span>
+                        <span>white</span>
+                        <span>grey</span>
+                        <span>black</span>
+                        <span>beige</span>
+                        <span>militaryGreen</span>
+                      </div>
+                      <span>$20.00</span>
+                    </figcaption>
+                  </figure>
+                  <a href="#">more</a>
+                </li>
+                <!-- 첫번째 요소 완료 후 추가 예정 -->
+                <li class="swiper-slide">Slide 2</li>
+                <li class="swiper-slide">Slide 3</li>
+                <li class="swiper-slide">Slide 4</li>
+                <li class="swiper-slide">Slide 5</li>
+                <li class="swiper-slide">Slide 6</li>
+                <li class="swiper-slide">Slide 7</li>
+                <li class="swiper-slide">Slide 8</li>
+                <li class="swiper-slide">Slide 9</li>
+              </ul>
+              <div class="swiper-button-next next1"></div>
+              <div class="swiper-button-prev prev1"></div>
+            </div>
+          </div>
+        </section>
+        <!-- section quickMenu -->
+        <section class="quickMenu">
+          <!-- menu 를 ul 로 감쌀것인가 아니면 각각의 div 로 진행할것인가. -->
+          <div class="accessorieQuick">
+            <!-- img를 감싸는 a 테그 와 p 테그 아래 a 테그는 같은 경로를 갖으나 영역이 다르다. 어떻게 할것인가? -->
+            <a href="#"><img src="#" alt="accessories" /></a>
+            <span>
+              Take your daily walks to the next level with our game-changing
+              accessories.
+            </span>
+            <a href="#">Shop Accessories</a>
+          </div>
+          <div class="apparelQuick">
+            <a href="#"><img src="#" alt="apparel" /></a>
+            <span>
+              Our designs will have your dog winning the best dressed award this
+              season.
+            </span>
+            <a href="#">Shop Apparel</a>
+          </div>
+          <div class="bagQuick">
+            <a href="#"><img src="#" alt="carrieBags" /></a>
+            <span>
+              Whatever your destination this season, we've got the perfect
+              carrier bag for you.
+            </span>
+            <a href="#">Shop Carrie Bags</a>
+          </div>
+        </section>
+
+        <!-- section review -->
+        <section class="review">
+          <div class="reviewImg">
+            <img src="#" alt="리뷰 이미지" />
+          </div>
+          <div class="reviewDetail">
+            <strong>don't just take<br />our word for it.<br />"</strong>
+            <div class="swiper reviewSlide">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <span
+                    >The best decision, second to adopting my puppy was
+                    selecting maxbone as my go to source for all my canine
+                    needs. The quality and customer service are
+                    outstanding.</span
+                  >
+                  <b>Jeffrey C.</b>
+                </li>
+                <li class="swiper-slide">Slide 2</li>
+                <li class="swiper-slide">Slide 3</li>
+                <li class="swiper-slide">Slide 4</li>
+                <li class="swiper-slide">Slide 5</li>
+                <li class="swiper-slide">Slide 6</li>
+                <li class="swiper-slide">Slide 7</li>
+                <li class="swiper-slide">Slide 8</li>
+                <li class="swiper-slide">Slide 9</li>
+              </ul>
+              <div class="swiper-button-next next2"></div>
+              <div class="swiper-button-prev prev2"></div>
+            </div>
+          </div>
+        </section>
+        <!-- section ad -->
+        <section class="ad">
+          <div class="adBanner">
+            <img src="#" alt="nutrition snack" />
+            <strong>real nutrition</strong>
+            <strong>real ingredients</strong>
+            <strong>real happy dogs</strong>
+            <span
+              >We couldn't find a food product we trusted<br />for our own dogs,
+              so we created one<br />ourselves - made with real ingredients
+              &amp;<br />nothing else.</span
+            >
+            <a href="#">Shop mb eats</a>
+          </div>
+        </section>
+
+        <!-- section brandComments -->
+        <section class="brandComments">
+          <div class="comments">
+            <div class="swiper brandCommentSlide">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <span>in the press</span>
+                  <span
+                    >maxbone’s Stylish Founder is Pampering Herself (and Her
+                    Pup) With These Self- Care Essentials.</span
+                  >
+                  <img src="./img/SVG-7.svg" alt="svg7" />
+                </li>
+                <li class="swiper-slide">Slide 2</li>
+                <li class="swiper-slide">Slide 3</li>
+                <li class="swiper-slide">Slide 4</li>
+                <li class="swiper-slide">Slide 5</li>
+                <li class="swiper-slide">Slide 6</li>
+                <li class="swiper-slide">Slide 7</li>
+                <li class="swiper-slide">Slide 8</li>
+                <li class="swiper-slide">Slide 9</li>
+              </ul>
+              <div class="swiper-button-next next3"></div>
+              <div class="swiper-button-prev prev3"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section founderComments -->
+        <section class="founderComments">
+          <div class="founder">
+            <img src="#" alt="founder" />
+          </div>
+          <div class="founderVision">
+            <span
+              >I started maxbone with one premise: to disrupt the pet industry
+              through a modern platform that meets the needs of pet owners for
+              high- quality food, function-forward designs, and a healthy
+              lifestyle. Our goal is to modernize all aspects of the pet
+              landscape, from the product to the delivery experience.</span
+            >
+            <strong>Parisa Fowles-PazdroFounder</strong>
+            <img src="./img/Signature.svg" alt="signature" />
+          </div>
+        </section>
+
+        <!-- section designProducts -->
+        <section class="designProducts">
+          <span>design for</span>
+          <strong>your dog's mind, body, and spirit</strong>
+          <div class="design">
+            <div class="swiper designProductSlide">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <img src="#" alt="design1" />
+
+                  <a href="#">more</a>
+                </li>
+                <!-- 첫번째 요소 완료 후 추가 예정 -->
+                <li class="swiper-slide">Slide 2</li>
+                <li class="swiper-slide">Slide 3</li>
+                <li class="swiper-slide">Slide 4</li>
+                <li class="swiper-slide">Slide 5</li>
+                <li class="swiper-slide">Slide 6</li>
+                <li class="swiper-slide">Slide 7</li>
+                <li class="swiper-slide">Slide 8</li>
+                <li class="swiper-slide">Slide 9</li>
+              </ul>
+              <div class="swiper-button-next next4"></div>
+              <div class="swiper-button-prev prev4"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="foot">
+        <!-- 질문사항 foot 부분을 아래에서 let's be friends 부분까지로 생각하고 있는데 강사님은 어떨지 질문하기. -->
+      </footer>
+    </div>
+  </body>
+</html>
