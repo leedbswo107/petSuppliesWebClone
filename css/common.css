@@ -1,5 +1,22 @@
 @charset 'utf-8';
 :root {
+  --rope: #915419;
+  --white: #ffffff;
+  --springWood: #f6f7ef;
+  --indianKhaki: #c6ae92;
+  --shadeOrange: #ffa395;
+  --lightBeige: #f5ead9;
+  --ivory: #fef7f1;
+  /* 
+    컬러는 순서대로
+    1. 헤더 배경 컬러
+    2. 모든 화이트
+    3. 신상품 슬라이드 배경 컬러
+    4. 리뷰어 이름 폰트색 & 푸터 맨 아래 footcontact 배경 컬러
+    5. brandComments 의 in the press 폰트 색상
+    6. founderVision 배경 컬러
+    7. footer 영역 이메일 input 테그 배경 컬러
+  */
 }
 
 /* 
