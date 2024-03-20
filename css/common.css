@@ -32,3 +32,6 @@ main > * {
 .foot {
   border: 5px solid yellow;
 }
+.foot > * {
+  border: 2px solid saddlebrown;
+}
