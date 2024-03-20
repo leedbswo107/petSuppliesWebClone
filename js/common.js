@@ -20,6 +20,8 @@ let brandCommentSlide = new Swiper('.brandCommentSlide', {
   },
 });
 let designProductSlide = new Swiper('.designProductSlide', {
+  slidesPerView: 2,
+  spaceBetween: 50,
   navigation: {
     nextEl: '.next4',
     prevEl: '.prev4',
