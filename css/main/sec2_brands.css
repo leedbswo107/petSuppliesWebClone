@@ -1,0 +1,7 @@
+.brands {
+  background-color: var(--white);
+}
+.brands ul {
+  padding-top: 1rem;
+  align-items: center;
+}
