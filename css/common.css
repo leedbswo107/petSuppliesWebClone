@@ -1,4 +1,7 @@
 @charset 'utf-8';
+
+/* every */
+
 :root {
   --rope: #915419;
   --white: #ffffff;
@@ -19,8 +22,13 @@
     7. footer 영역 이메일 input 테그 배경 컬러
     8. founderVision 라인
   */
+  text-transform: capitalize;
 }
-
+.mw {
+  padding: 0 100px;
+  min-width: calc(100% - 200px);
+  /* min-width: 1100px; */
+}
 /* 
   .brands > span 
   text-transform: capitalize;
@@ -33,15 +41,11 @@ main > * {
   border: 1px solid red;
 }
 .hd {
-  border: 3px solid greenyellow;
+  /* border: 3px solid greenyellow; */
   /* delete later */
 }
 .mainBanner img {
   width: 50%;
-  /* delete later */
-}
-.productSlide ul li {
-  background-color: lightblue;
   /* delete later */
 }
 .quickMenu > * {

@@ -1,0 +1,12 @@
+/* css links */
+
+/* header CSS */
+@import url('./header/gnb.css');
+@import url('./header/utilHeader.css');
+/* main CSS */
+@import url('./main/sec1_mainVisual.css');
+@import url('./main/sec2_brands.css');
+@import url('./main/sec3_introduce.css');
+@import url('./main/sec4_newArrivals.css');
+
+/* footer CSS */

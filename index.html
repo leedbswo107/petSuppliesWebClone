@@ -9,15 +9,88 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/cssLink.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/common.js" defer></script>
   </head>
   <body>
     <div class="wrap">
       <header class="hd">
+        <!-- .gnb -->
+        <div class="mainHead mw">
+          <h1>
+            <a href="#"><img src="./img/logo-01.svg" alt="logo" /></a>
+          </h1>
+          <div>
+            <ul class="gnb">
+              <li>
+                <a href="#">shop all</a>
+                <ul class="sub">
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">supplies</a>
+                <ul class="sub">
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">subscribe</a>
+                <ul class="sub">
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="searchAndShopping">
+            <ul>
+              <li>
+                <a href="#">ABOUT US</a>
+                <ul class="sub">
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">test</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a href="#"><img src="./img/search.svg" alt="search" /></a>
+            <a href="#"
+              ><img src="./img/shopping-bag.svg" alt="shoppingBag"
+            /></a>
+            <!-- shoppingBag 그림이 있는 a 태그에는 가상태그 붙어야함.. -->
+          </div>
+        </div>
+
         <!-- .utilHeader -->
-        <div class="utilHeader">
+        <div class="utilHeader mw">
           <p>
             Stick to what works: functional and good-looking designs for your
             pet
@@ -28,36 +101,13 @@
             <a href="#">Blog</a>
           </div>
         </div>
-        <!-- .gnb -->
-        <div class="gnb">
-          <nav>
-            <ul>
-              <li><a href="#">shop all</a></li>
-              <li><a href="#">supplies</a></li>
-              <li><a href="#">subscribe</a></li>
-            </ul>
-          </nav>
-          <h1>
-            <a href="#"><img src="./img/logo-01.svg" alt="logo" /></a>
-          </h1>
-          <div class="person">
-            <ul>
-              <li>
-                <a href="#">ABOUT US</a>
-              </li>
-            </ul>
-            <a href="#"><img src="./img/search.svg" alt="search" /></a>
-            <a href="#"
-              ><img src="./img/shopping-bag.svg" alt="shoppingBag"
-            /></a>
-          </div>
-        </div>
       </header>
+
       <main>
         <!-- section mainVisual -->
         <section class="mainVisual">
-          <div class="mainBanner">
-            <img src="./img/mainBanner.png" alt="dog" />
+          <div class="mainBanner mw">
+            <!-- <img src="./img/mainBanner.png" alt="dog" /> -->
             <div>
               <h2>It's<br />Sweater<br />Weather</h2>
               <p>
@@ -71,70 +121,84 @@
 
         <!-- section brands -->
         <section class="brands">
-          <div class="brandSlide">
-            <img src="./img/SVG-1.svg" alt="svg1" />
-            <img src="./img/SVG-2.svg" alt="svg2" />
-            <img src="./img/SVG-3.svg" alt="svg3" />
-            <img src="./img/SVG-4.svg" alt="svg4" />
-            <img src="./img/SVG-5.svg" alt="svg5" />
-            <img src="./img/SVG-6.svg" alt="svg6" />
-            <img src="./img/SVG-7.svg" alt="svg7" />
+          <h2 hidden>brands</h2>
+          <div class="swiper brandSlide">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#"><img src="./img/SVG-1.svg" alt="svg1" /></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="./img/SVG-2.svg" alt="svg2" /></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="./img/SVG-3.svg" alt="svg3" /></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="./img/SVG-4.svg" alt="svg4" /></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="./img/SVG-5.svg" alt="svg5" /></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="./img/SVG-6.svg" alt="svg6" /></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="./img/SVG-7.svg" alt="svg7" /></a>
+              </li>
+            </ul>
           </div>
-          <!-- 
-            slide 내부 이미지를 div로 감쌀 필요가 있는가?
-            div 말고 ul 하고 img 를 li 로 감싼다면?
-          -->
+        </section>
+
+        <!-- section introduce -->
+        <section class="introduce">
+          <!-- .introduce p text-transform: capitalize; -->
           <h2>Pet Essentials, Modernized</h2>
           <p>
             We're a one-stop-shop born to provide a modern, smart experience in
-            pet care. We are here to help your dog feel good, look good, and get
-            more out of life.
+            pet care.<br />We are here to help your dog feel good, look good,
+            and get more out of life.
           </p>
-          <!-- .brands > span text-transform: capitalize; -->
         </section>
 
         <!-- section newArrivals -->
         <section class="newArrivals">
-          <div>
-            <span>this month's</span>
-            <h2>New Arrivals</h2>
-            <span>just landed</span>
-          </div>
+          <h2>
+            <span>this month's</span><br />
+            New Arrivals<br />
+            <b>just landed</b>
+          </h2>
           <div class="products">
             <div class="swiper productSlide">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
                   <figure class="card">
                     <img src="./img/product1.png" alt="product1" />
-                    <span>New In</span>
+                    <span>new in</span>
                     <figcaption>
                       <h3>Signature Collar</h3>
                       <div class="productColor">
                         <span>red</span>
+                        <span>lightPurple</span>
+                        <span>pastelGreen</span>
+                        <span>lightOrange</span>
                         <span>yellow</span>
-                        <span>lightblue</span>
-                        <span>white</span>
-                        <span>grey</span>
-                        <span>black</span>
-                        <span>beige</span>
-                        <span>militaryGreen</span>
                       </div>
-                      <span>$20.00</span>
+                      <span>&#36;115.00 <u>&#36;125.00</u></span>
                       <a href="#">more</a>
                     </figcaption>
                   </figure>
                 </li>
                 <!-- 첫번째 요소 완료 후 추가 예정 -->
                 <li class="swiper-slide">
-                  <figure>
+                  <figure class="card">
                     <img src="./img/product2.png" alt="product2" />
                     <span>New In</span>
                     <figcaption>
                       <h3>Signature Collar</h3>
                       <div class="productColor">
-                        <span>red</span>
+                        <span>copper</span>
                         <span>yellow</span>
-                        <span>lightblue</span>
+                        <span>d</span>
                         <span>white</span>
                         <span>grey</span>
                         <span>black</span>
@@ -216,41 +280,43 @@
             </div>
           </div>
         </section>
-        <!-- section quickMenu -->
-        <section class="quickMenu">
-          <!-- menu 를 ul 로 감쌀것인가 아니면 각각의 div 로 진행할것인가. -->
-          <div class="accessorieQuick">
-            <!-- img를 감싸는 a 테그 와 p 테그 아래 a 테그는 같은 경로를 갖으나 영역이 다르다. 어떻게 할것인가? -->
-            <a href="#"><img src="./img/quick1.png" alt="accessories" /></a>
+        <!-- section category -->
+        <section class="category">
+          <h2 hidden>category</h2>
+          <div class="inner">
+            <img src="./img/category1.png" alt="accessories" />
             <p>
               Take your daily walks to the next level with our game-changing
               accessories.
             </p>
-            <a href="#">Shop Accessories</a>
+            <span>Shop Accessories</span>
+            <!-- span 에 before, after 로 각각 밑줄과 화살표 구현-->
+            <a href="#">more</a>
           </div>
-          <div class="apparelQuick">
-            <a href="#"><img src="./img/quick2.png" alt="apparel" /></a>
+          <div class="inner">
+            <img src="./img/category2.png" alt="apparel" />
             <p>
               Our designs will have your dog winning the best dressed award this
               season.
             </p>
-            <a href="#">Shop Apparel</a>
+            <span>shop apparel</span>
+            <a href="#">more</a>
           </div>
-          <div class="bagQuick">
-            <a href="#"><img src="./img/quick3.png" alt="carrieBags" /></a>
+          <div class="inner">
+            <img src="./img/category3.png" alt="carrieBags" />
             <p>
               Whatever your destination this season, we've got the perfect
               carrier bag for you.
             </p>
-            <a href="#">Shop Carrie Bags</a>
+            <span>shop carrie bags</span>
+            <a href="#">more</a>
           </div>
         </section>
 
         <!-- section review -->
+        <!-- 사진 fade-in-out 효과와 함께 리뷰 글은 스와이프로 바뀌게 추가해보기 -->
+        <!-- 내 생각에는 next2, prev2 를 같게 할당하면 될거 같은 느낌? -->
         <section class="review">
-          <div class="reviewImg">
-            <img src="./img/review.png" alt="review img" />
-          </div>
           <div class="reviewDetail">
             <h2>don't just take<br />our word for it.<br />"</h2>
             <div class="swiper reviewSlide">
@@ -261,31 +327,53 @@
                     maxbone as my go to source for all my canine needs. The
                     quality and customer service are outstanding.
                   </p>
-                  <b>Jeffrey C.</b>
+                  <b>Jeffrey C&#46;</b>
                 </li>
-                <li class="swiper-slide">Slide 2</li>
-                <li class="swiper-slide">Slide 3</li>
-                <li class="swiper-slide">Slide 4</li>
-                <li class="swiper-slide">Slide 5</li>
-                <li class="swiper-slide">Slide 6</li>
-                <li class="swiper-slide">Slide 7</li>
-                <li class="swiper-slide">Slide 8</li>
-                <li class="swiper-slide">Slide 9</li>
+                <li class="swiper-slide">
+                  <p>
+                    My pup loves the Talon raincoat. First, it shipped and
+                    arrived very quickly. Aside from the wonderful box
+                    presentation, we love the quality and material right when we
+                    opened it. It fits perfectly and isn't difficult to put on.
+                    It's effective against the rain and is super cute. This
+                    product made us want to buy Max-Bone everything.
+                  </p>
+                  <b>Natalie P&#46;</b>
+                </li>
+                <li class="swiper-slide">
+                  <p>
+                    I love the attention to detail of maxbone's products. I've
+                    purchased several items and all are meticulous.
+                  </p>
+                  <b>Deborah E&#46;</b>
+                </li>
+                <li class="swiper-slide">
+                  <p>
+                    Mb eats is miracle food! I've tried almost every brand of
+                    food Acana, Orijen, Fresh Pet, Stella & Chewy, Call of the
+                    Wild, and she refuses them all. I decided to give MB Eats a
+                    try and i'm happy to report my girl is happily eating for
+                    the first time in her life!
+                  </p>
+                  <b>Taylor G&#46;</b>
+                </li>
               </ul>
               <!-- css 작성하면서 위치 변경 예정 -->
               <div class="swiper-button-next next2"></div>
               <div class="swiper-button-prev prev2"></div>
             </div>
+            <img src="./img/review.png" alt="review img" />
           </div>
         </section>
         <!-- section ad -->
         <section class="ad">
           <div class="adBanner">
-            <img src="./img/adBanner.png" alt="nutrition snack" />
+            <!-- img 는 css background-image 를 사용해보자 -->
+            <!-- <img src="./img/adBanner.png" alt="nutrition snack" /> -->
             <h2>
-              <strong>real nutrition</strong>
-              <strong>real ingredients</strong>
-              <strong>real happy dogs</strong>
+              <strong>real nutrition</strong><br />
+              <strong>real ingredients</strong><br />
+              <strong>real happy dogs</strong><br />
             </h2>
             <p>
               We couldn't find a food product we trusted<br />for our own dogs,
@@ -298,6 +386,7 @@
 
         <!-- section brandComments -->
         <section class="brandComments">
+          <h2 hidden>brands comments</h2>
           <div class="comments">
             <div class="swiper brandCommentSlide">
               <ul class="swiper-wrapper">
@@ -309,14 +398,26 @@
                   </p>
                   <img src="./img/SVG-7.svg" alt="svg7" />
                 </li>
-                <li class="swiper-slide">Slide 2</li>
-                <li class="swiper-slide">Slide 3</li>
-                <li class="swiper-slide">Slide 4</li>
-                <li class="swiper-slide">Slide 5</li>
-                <li class="swiper-slide">Slide 6</li>
-                <li class="swiper-slide">Slide 7</li>
-                <li class="swiper-slide">Slide 8</li>
-                <li class="swiper-slide">Slide 9</li>
+                <li class="swiper-slide">
+                  <span>in the press</span>
+                  <p>maxbone created the best dog raincoat ever to exist!</p>
+                  <img src="./img/SVG-4.svg" alt="svg4" />
+                </li>
+                <li class="swiper-slide">
+                  <span>in the press</span>
+                  <p>
+                    maxbone's founder, Parisa Fowles-Pazdro honored in INC's
+                    Magazine Female Founder 100
+                  </p>
+                  <img src="./img/SVG-1.svg" alt="svg1" />
+                </li>
+                <li class="swiper-slide">
+                  <span>in the press</span>
+                  <p>
+                    Chic pet care brand maxbone has been lighting up Instagram.
+                  </p>
+                  <img src="./img/SVG-2.svg" alt="svg2" />
+                </li>
               </ul>
               <!-- css 작성하면서 위치 변경 예정 -->
               <div class="swiper-button-next next3"></div>
@@ -327,26 +428,28 @@
 
         <!-- section founderComments -->
         <section class="founderComments">
-          <div class="founder">
-            <img src="./img/founder.png" alt="founder" />
-          </div>
+          <h2 hidden>founder comments</h2>
           <div class="founderVision">
-            <p>
-              I started maxbone with one premise: to disrupt the pet industry
-              through a modern platform that meets the needs of pet owners for
-              high- quality food, function-forward designs, and a healthy
-              lifestyle. Our goal is to modernize all aspects of the pet
-              landscape, from the product to the delivery experience.
-            </p>
-            <h2>Parisa Fowles-PazdroFounder</h2>
-            <img src="./img/Signature.svg" alt="signature" />
+            <div>
+              <p>
+                I started maxbone with one premise: to disrupt the pet industry
+                through a modern platform that meets the needs of pet owners for
+                high- quality food, function-forward designs, and a healthy
+                lifestyle. Our goal is to modernize all aspects of the pet
+                landscape, from the product to the delivery experience.
+              </p>
+              <h2>Parisa Fowles-PazdroFounder</h2>
+              <img src="./img/Signature.svg" alt="signature" />
+            </div>
+            <img src="./img/founder.png" alt="founder" />
           </div>
         </section>
 
         <!-- section designProducts -->
         <section class="designProducts">
-          <span>design for</span>
-          <h2>your dog's mind, body, and spirit</h2>
+          <h2>
+            <span>design for</span><br />your dog's mind, body, and spirit
+          </h2>
           <div class="design">
             <div class="swiper designProductSlide">
               <ul class="swiper-wrapper">
@@ -368,32 +471,34 @@
             </div>
           </div>
         </section>
-        <div class="snsLink">
-          <p>Let’s be friends: Follow us</p>
-          <br />
-          <span>&#64;themaxbone</span>
-        </div>
         <section class="enterEmail">
-          <div class="emailBanner">
-            <img src="./img/emailBanner.png" alt="emailBannerImg" />
+          <div class="snsLink">
+            <p>Let’s be friends: Follow us</p>
+            <br />
+            <span>&#64;themaxbone</span>
           </div>
-          <form class="emailForm">
+          <div class="emailArea">
+            <!-- <div class="emailBanner">
+            <img src="./img/emailBanner.png" alt="emailBannerImg" />
+            </div> -->
             <h2>Let’s stay in touch</h2>
             <p>
               Receive email updates on stuff you’ll probably want to know about,
               including products, collaborations and cute pups.
             </p>
-            <label for="email">Email</label>
-            <input
-              type="email"
-              title="email"
-              pattern=".+@example\.com"
-              size="30"
-              placeholder="Enter your email"
-              required
-            />
-            <button class="emailBtn" type="button">arrow</button>
-          </form>
+            <form class="emailForm">
+              <label for="email">Email </label>
+              <input
+                type="email"
+                title="email"
+                pattern=".+@example\.com"
+                size="30"
+                placeholder="Enter your email"
+                required
+              />
+              <button class="emailBtn" type="button">arrow</button>
+            </form>
+          </div>
         </section>
       </main>
       <footer class="foot">

@@ -1,0 +1,11 @@
+.introduce {
+  padding: 3.375rem 0;
+  text-align: center;
+}
+.introduce h2 {
+  font-size: 3.125rem;
+}
+.introduce p {
+  padding-top: 1rem;
+  font-size: 1.188rem;
+}

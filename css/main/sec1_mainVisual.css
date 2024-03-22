@@ -1,0 +1,35 @@
+.mainVisual {
+  color: var(--white);
+}
+.mainVisual .mainBanner {
+  padding-top: 50%;
+  background-image: url('../../img/mainBanner.png');
+  background-size: cover;
+  position: relative;
+}
+.mainBanner div {
+  position: absolute;
+  width: 18%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mainBanner h2 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.mainBanner p {
+  font-size: 1.188rem;
+  text-transform: none;
+}
+.mainBanner a {
+  position: absolute;
+  top: calc(100% + 1rem);
+  border: 2px solid var(--white);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+.mainBanner a:hover {
+  color: gray;
+  border-color: gray;
+}
