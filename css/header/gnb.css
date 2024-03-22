@@ -1,0 +1,124 @@
+.hd {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.hd .mainHead {
+  display: flex;
+  width: 100%;
+  /* justify-content: center; */
+  align-items: center;
+  font-size: 1rem;
+}
+.mainHead nav {
+  order: 1;
+  height: 100%;
+}
+.mainHead .gnb {
+  display: flex;
+}
+.hd h1 {
+  width: 100%;
+  display: flex;
+  order: 2;
+  justify-content: center;
+}
+.mainHead .searchAndShopping {
+  order: 3;
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+}
+.searchAndShopping > a {
+  padding-left: 1rem;
+}
+.hd div > ul li > a {
+  padding: 1rem 2rem 1rem 1rem;
+  white-space: nowrap;
+}
+.hd div > ul > a {
+  padding: 0.25rem 0.75rem;
+  height: auto;
+}
+.hd div > ul > li {
+  position: relative;
+}
+.hd div > ul > li:hover .sub > li {
+  visibility: visible;
+  /* border: 5px solid yellow; */
+  background-color: white;
+  height: auto;
+}
+.hd div > ul > li > a {
+  display: inline-block;
+  padding: 2rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.hd div > ul > li:hover > a {
+  color: var(--shadeOrange);
+}
+.hd div > ul > li > a::after {
+  content: '\f107';
+  font-family: 'Font Awesome 6 Free';
+  display: inline-block;
+  font-weight: 900;
+  margin-left: 0.5rem;
+  transform-origin: center;
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+.hd div > ul > li:hover > a::after {
+  transform-origin: center;
+  transform: rotate(180deg);
+}
+.hd div > ul .sub {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  height: 0;
+  z-index: 10;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+/* .gnb > li {
+  border: 5px solid red;
+  position: relative;
+}
+.gnb > li:hover .sub {
+  visibility: visible;
+  background-color: white;
+  height: auto;
+}
+.gnb > li > a {
+  display: inline-block;
+  padding: 2em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.gnb > li:hover > a {
+  color: var(--shadeOrange);
+}
+.gnb > li > a::after {
+  content: '\f107';
+  font-family: 'Font Awesome 6 Free';
+  display: inline-block;
+  font-weight: 900;
+  margin-left: 0.5em;
+  transform-origin: center;
+  transform: rotate(0deg);
+  transition: 0.2s;
+}
+.gnb > li:hover > a::after {
+  transform-origin: center;
+  transform: rotate(180deg);
+}
+.gnb .sub {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  height: 0;
+  z-index: 10;
+  visibility: hidden;
+  transition: 0.3s;
+} */
