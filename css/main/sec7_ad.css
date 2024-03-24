@@ -1,0 +1,44 @@
+.ad {
+  background-image: url('../../img/adBanner.png');
+  background-size: cover;
+  padding-top: 50%;
+  position: relative;
+}
+.ad .adBanner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--white);
+}
+.adBanner h2 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-bottom: 4rem;
+}
+.adBanner p::before {
+  content: '';
+  position: absolute;
+  width: 7%;
+  height: 3px;
+  background-color: var(--sorrellBrown);
+  bottom: calc(100% + 1rem);
+}
+.adBanner p {
+  font-size: 19px;
+  text-transform: none;
+  padding-bottom: 1rem;
+  position: relative;
+}
+.adBanner a {
+  font-size: 15px;
+  text-transform: none;
+  border: 1px solid var(--white);
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+.adBanner a:hover {
+  opacity: 0.5;
+  border-color: var(--shadeOrange);
+  color: var(--shadeOrange);
+}

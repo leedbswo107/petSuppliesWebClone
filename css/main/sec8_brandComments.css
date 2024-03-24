@@ -1,0 +1,31 @@
+.brandComments {
+  padding: 102px 397px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: visible;
+}
+.brandComments span {
+  font-size: 15px;
+  color: var(--shadeOrange);
+}
+.brandComments p {
+  padding: 2rem 0;
+  font-size: 34px;
+}
+.comments {
+  overflow: visible;
+  position: relative;
+}
+.comments .next3,
+.comments .prev3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.comments .next3 {
+  left: calc(100% + 1rem);
+}
+.comments .prev3 {
+  left: -2rem;
+}

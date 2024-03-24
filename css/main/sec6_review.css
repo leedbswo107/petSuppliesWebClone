@@ -1,0 +1,47 @@
+.review {
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  gap: 100px;
+  padding: 4rem 0;
+  /* position: relative; */
+}
+.review .reviewDetail {
+  overflow: hidden;
+  display: flex;
+  width: 50%;
+  /* padding-left: 100px; */
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.reviewDetail h2 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.reviewDetail p {
+  width: 300px;
+}
+.reviewDetail b {
+  color: var(--shadeOrange);
+}
+.review .reviewImg {
+  width: 50%;
+  object-fit: contain;
+}
+.review .reviewImgSlide img {
+  width: 100%;
+}
+
+.review .next2,
+.review .prev2 {
+  position: absolute;
+  top: 100%;
+}
+.review .next2 {
+  left: 55%;
+}
+.review .prev2 {
+  left: 45%;
+}
