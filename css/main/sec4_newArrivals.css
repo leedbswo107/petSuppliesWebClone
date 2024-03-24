@@ -29,13 +29,23 @@
 .products {
   overflow: visible;
 }
+.products > div {
+  padding-bottom: 4rem;
+}
 .productSlide .swiper-slide {
-  width: 20%;
+  /* width: 10%; */
 }
 .card {
-  padding-top: 180%;
+  padding-top: 140%;
   position: relative;
-  overflow: hidden;
+  transition: 0.3s;
+  border-radius: 2rem;
+  /* overflow: hidden; */
+}
+.card:hover {
+  /* transform-origin: top;
+  transform: scale(1.1); */
+  opacity: 0.7 !important;
 }
 .card img {
   position: absolute;
@@ -54,7 +64,118 @@
   right: 0.75rem;
 }
 .card figcaption {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   font-size: 1rem;
+  top: 100%;
+}
+.card figcaption u {
+  padding-left: 5px;
+  text-decoration: line-through;
+  color: gray;
+}
+.card a {
+  color: transparent;
+  position: absolute;
+  top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: white; */
+}
+.productColor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.productColor h3 {
+  flex: 1;
+}
+.productColor span {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 5px;
+  z-index: 10;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.productColor span:hover {
+  opacity: 0.5 !important;
+}
+.productColor span.copper {
+  background-color: rgb(199, 116, 60);
+}
+.productColor span.yellow {
+  background-color: yellow;
+}
+.productColor span.red {
+  background-color: red;
+}
+.productColor span.lightblue {
+  background-color: #add8e6;
+}
+.productColor span.white {
+  background-color: var(--white);
+}
+.productColor span.gray {
+  background-color: gray;
+}
+.productColor span.black {
+  background-color: black;
+}
+.productColor span.beige {
+  background-color: beige;
+}
+.productColor span.militaryGreen {
+  background-color: darkolivegreen;
+}
+.productColor span.lightPurple {
+  background-color: #f6cffc;
+}
+.productColor span.pastelGreen {
+  background-color: #77dd77;
+}
+.productColor span.ligthOrange {
+  background-color: #ffd580;
+}
+.newArrivals .next1,
+.newArrivals .prev1 {
+  position: absolute;
+  top: 90%;
+  width: 2rem;
+  color: black;
+  transition: 0.3s;
+}
+.newArrivals .next1 {
+  left: 53%;
+}
+.newArrivals .next1::after {
+  content: '';
+  display: inline-block;
+  height: 2rem;
+  width: 3rem;
+  background-image: url('../../img/arrow-right.svg');
+  /* font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 2rem; */
+}
+.newArrivals .prev1 {
+  left: 47%;
+}
+.newArrivals .prev1::after {
+  content: '';
+  display: inline-block;
+  height: 2rem;
+  width: 3rem;
+  background-image: url('../../img/arrow-left.svg');
+}
+.newArrivals .prev1:hover,
+.newArrivals .next1:hover {
+  transform: scale(1.2);
 }
