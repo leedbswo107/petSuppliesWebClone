@@ -1,5 +1,5 @@
 let productSlide = new Swiper('.productSlide', {
-  slidesPerView: 'auto',
+  slidesPerView: '4',
   spaceBetween: 32,
   centeredSlides: true,
   loop: true,
@@ -7,19 +7,43 @@ let productSlide = new Swiper('.productSlide', {
     nextEl: '.next1',
     prevEl: '.prev1',
   },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
 });
-
-let reviewSlide = new Swiper('.reviewSlide', {
+let reviewImgSlide = new Swiper('.reviewImgSlide', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  effect: 'fade',
+  loop: true,
   navigation: {
     nextEl: '.next2',
     prevEl: '.prev2',
   },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
+let reviewSlide = new Swiper('.reviewSlide', {
+  spaceBetween: 30,
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: '.next2',
+    prevEl: '.prev2',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+reviewImgSlide.controller.control = reviewSlide;
+reviewSlide.controller.control = reviewImgSlide;
+
 let brandCommentSlide = new Swiper('.brandCommentSlide', {
+  loop: true,
   navigation: {
     nextEl: '.next3',
     prevEl: '.prev3',
