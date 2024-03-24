@@ -1,0 +1,46 @@
+.founderComments {
+  font-size: 20px;
+}
+.founderVision {
+  padding-top: 124px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.founderVision .inner {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  background-color: var(--lightBeige);
+  padding: 120px 120px 120px 100px;
+}
+.founderVision .inner h2 {
+  font-size: 22px;
+  padding: 60px 0 30px 0;
+  order: 2;
+}
+.founderVision .inner p {
+  text-transform: none;
+  padding-bottom: 44px;
+  position: relative;
+  order: 1;
+}
+.founderVision .inner p::after {
+  content: '';
+  height: 3px;
+  width: 15%;
+  position: absolute;
+  background-color: var(--sorrellBrown);
+  top: 100%;
+  left: 0;
+}
+.founderVision .inner img {
+  order: 3;
+  width: calc(100% / 3);
+}
+.founderVision > img {
+  width: 45%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
