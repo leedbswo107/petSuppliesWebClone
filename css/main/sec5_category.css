@@ -22,13 +22,14 @@
   position: relative;
   /* width: 100%; */
   font-size: 15.5px;
-  padding-left: calc(100% / 3);
+  margin-left: calc(100% / 3);
+  padding-right: calc(100% / 5);
 }
 .category .inner a::before {
   content: '';
   position: absolute;
   top: 100%;
-  width: 65%;
+  width: 100%;
   height: 1px;
   background-color: black;
 }
@@ -36,7 +37,7 @@
   content: '';
   position: absolute;
   top: 50%;
-  left: 115%;
+  right: 0;
   transform: translateY(-50%);
   height: 1.5rem;
   width: 1.5rem;

@@ -467,56 +467,89 @@
         <!-- section designProducts -->
         <section class="designProducts">
           <h2>
-            <span>design for</span><br />your dog's mind, body, and spirit
+            <span>design for</span><b>your dog's mind, body, and spirit</b>
           </h2>
           <div class="design">
             <div class="swiper designProductSlide">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
-                  <img src="./img/design1.png" alt="design1" />
-                  <p>Pet Essentials, modernized</p>
-                  <a href="#">Learn more</a>
+                  <figure class="card">
+                    <figcaption>
+                      <p>Pet Essentials, modernized</p>
+                      <a href="#">Learn more</a>
+                    </figcaption>
+                    <img src="./img/design1.png" alt="design1" />
+                  </figure>
                 </li>
                 <!-- 첫번째 요소 완료 후 추가 예정 -->
                 <li class="swiper-slide">
-                  <img src="./img/design2.png" alt="design2" />
-                  <p>Functionality Meets Modern Design</p>
-                  <a href="#">Learn more</a>
+                  <figure class="card">
+                    <figcaption>
+                      <p>Functionality Meets Modern Design</p>
+                      <a href="#">Learn more</a>
+                    </figcaption>
+                    <img src="./img/design2.png" alt="design2" />
+                  </figure>
+                </li>
+                <li class="swiper-slide">
+                  <figure class="card">
+                    <figcaption>
+                      <p>Functionality Meets Modern Design</p>
+                      <a href="#">Learn more</a>
+                    </figcaption>
+                    <img src="./img/design3.png" alt="design3" />
+                  </figure>
+                </li>
+                <li class="swiper-slide">
+                  <figure class="card">
+                    <figcaption>
+                      <p>Functionality Meets Modern Design</p>
+                      <a href="#">Learn more</a>
+                    </figcaption>
+                    <img src="./img/design4.png" alt="design4" />
+                  </figure>
                 </li>
               </ul>
               <!-- css 작성하면서 위치 변경 예정 -->
-              <div class="swiper-button-next next4"></div>
-              <div class="swiper-button-prev prev4"></div>
+            </div>
+            <div class="swiper-button-next next4">
+              <img src="./img/arrow-right.svg" alt="" />
+            </div>
+            <div class="swiper-button-prev prev4">
+              <img src="./img/arrow-left.svg" alt="" />
             </div>
           </div>
         </section>
         <section class="enterEmail">
-          <div class="snsLink">
-            <p>Let’s be friends: Follow us</p>
-            <br />
-            <span>&#64;themaxbone</span>
-          </div>
           <div class="emailArea">
             <!-- <div class="emailBanner">
             <img src="./img/emailBanner.png" alt="emailBannerImg" />
             </div> -->
-            <h2>Let’s stay in touch</h2>
-            <p>
-              Receive email updates on stuff you’ll probably want to know about,
-              including products, collaborations and cute pups.
-            </p>
-            <form class="emailForm">
-              <label for="email">Email </label>
-              <input
-                type="email"
-                title="email"
-                pattern=".+@example\.com"
-                size="30"
-                placeholder="Enter your email"
-                required
-              />
-              <button class="emailBtn" type="button">arrow</button>
-            </form>
+            <div class="inner">
+              <h2>Let’s stay in touch</h2>
+              <p>
+                Receive email updates on stuff you’ll probably<br />want to know
+                about, including products,<br />
+                collaborations and cute pups.
+              </p>
+              <form class="emailForm">
+                <label for="email" hidden>Email </label>
+                <input
+                  type="email"
+                  title="email"
+                  pattern=".+@example\.com"
+                  size="30"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button class="emailBtn" type="button" title="emailBtn">
+                  <img src="./img/arrow-right.svg" alt="" />
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="snsLink mw">
+            <p>Let’s be friends: Follow us<span>&#64;themaxbone</span></p>
           </div>
         </section>
       </main>
@@ -528,7 +561,6 @@
               Need help? Email us at<br />info@maxbone.com. We’re here for<br />you,
               and ready to answer your<br />questions.
             </p>
-            <!-- <b>M-F 9am-5pm PST</b> -->
             <div class="snsList">
               <a href="#"><img src="./img/sns1.svg" alt="sns1" /></a>
               <a href="#"><img src="./img/sns2.svg" alt="sns2" /></a>
@@ -548,30 +580,30 @@
             </div>
           </div>
           <div class="customerCareTwo">
-            <strong>Customer Care</strong><br />
-            <a href="#">Size Guide</a><br />
-            <a href="#">Shipping Information</a><br />
-            <a href="#">Returns &amp; Exchanges</a><br />
-            <a href="#">FAQ</a><br />
-            <a href="#">Wholesale</a><br />
-            <a href="#">Affiliates</a><br />
+            <strong>Customer Care</strong>
+            <a href="#">Size Guide</a>
+            <a href="#">Shipping Information</a>
+            <a href="#">Returns &amp; Exchanges</a>
+            <a href="#">FAQ</a>
+            <a href="#">Wholesale</a>
+            <a href="#">Affiliates</a>
           </div>
           <div class="supplies">
-            <strong>Supplies</strong><br />
-            <a href="#">Walk</a><br />
-            <a href="#">Bags</a><br />
-            <a href="#">Wear</a><br />
-            <a href="#">Toys</a><br />
-            <a href="#">Beds</a><br />
-            <a href="#">Bestseller</a><br />
+            <strong>Supplies</strong>
+            <a href="#">Walk</a>
+            <a href="#">Bags</a>
+            <a href="#">Wear</a>
+            <a href="#">Toys</a>
+            <a href="#">Beds</a>
+            <a href="#">Bestseller</a>
           </div>
           <div class="about">
-            <strong>About</strong><br />
-            <a href="#">About us</a><br />
-            <a href="#">In The Press</a><br />
-            <a href="#">Collaborations</a><br />
-            <a href="#">Charities</a><br />
-            <a href="#">Careers</a><br />
+            <strong>About</strong>
+            <a href="#">About us</a>
+            <a href="#">In The Press</a>
+            <a href="#">Collaborations</a>
+            <a href="#">Charities</a>
+            <a href="#">Careers</a>
           </div>
         </div>
         <div class="footContact mw">

@@ -11,16 +11,19 @@
 }
 .mainHead nav {
   order: 1;
-  height: 100%;
+  /* height: 100%; */
 }
 .mainHead .gnb {
   display: flex;
 }
 .hd h1 {
-  width: 100%;
   display: flex;
   order: 2;
   justify-content: center;
+  flex-grow: 1;
+}
+.hd h1 img {
+  width: 360px;
 }
 .mainHead .searchAndShopping {
   order: 3;
@@ -30,6 +33,9 @@
 }
 .searchAndShopping > a {
   padding-left: 1rem;
+}
+.searchAndShopping > a img {
+  padding: 4px 12px;
 }
 .hd div > ul li > a {
   padding: 1rem 2rem 1rem 1rem;
