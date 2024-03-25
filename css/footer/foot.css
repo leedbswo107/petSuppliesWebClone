@@ -5,18 +5,44 @@
   padding-bottom: 90px;
   font-size: 14px;
 }
+.foot .footInfo > div > * {
+  display: block;
+  height: auto;
+  padding-bottom: 1rem;
+}
+.foot .footInfo > div a:last-of-type {
+  padding-bottom: 0;
+}
 .foot .footInfo > div strong {
   font-size: 19px;
   font-weight: bold;
+}
+.foot .footInfo .customerCareOne > * {
+  padding-bottom: 12px;
+}
+.foot .footInfo .customerCareOne .contactInfo {
+  padding-bottom: 0;
 }
 .customerCareOne .snsList {
   display: flex;
   align-items: center;
 }
+.customerCareOne .snsList a {
+  padding: 0.5rem;
+}
 .customerCareOne .contactInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.customerCareOne .contactInfo a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding-bottom: 9px;
+}
+.customerCareOne .contactInfo a span {
+  padding-left: 8px;
 }
 .foot .footContact {
   background-color: var(--indianKhaki);

@@ -1,0 +1,63 @@
+.enterEmail {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 1rem;
+}
+.snsLink {
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  text-transform: none;
+}
+.snsLink p {
+  padding: 36px 0;
+}
+.snsLink span {
+  display: block;
+}
+
+.enterEmail .emailArea {
+  padding-top: 25%;
+  background-image: url('../../img/emailBanner.png');
+  background-size: cover;
+  position: relative;
+}
+.emailArea .inner {
+  position: absolute;
+  padding: 64px 0 64px 150px;
+  left: 0;
+  top: 0;
+}
+.emailArea .inner h2 {
+  font-size: 44px;
+}
+.emailArea .inner p {
+  padding: 40px 0;
+  line-height: 1;
+}
+.emailArea .emailForm {
+  display: inline-block;
+  position: relative;
+}
+.emailArea .emailForm img {
+  width: 1.5rem;
+}
+.emailArea .emailForm .emailBtn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  align-self: center;
+  transition: 0.3s;
+}
+.emailArea .emailForm .emailBtn:hover {
+  transform: translateY(-50%) translateX(2px);
+}
+.emailArea .emailForm input {
+  padding: 0.5rem 1rem;
+  border-style: none;
+  font-size: 1rem;
+}
