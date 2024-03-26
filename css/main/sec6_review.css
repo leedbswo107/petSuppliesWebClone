@@ -1,34 +1,37 @@
 .review {
   display: flex;
   flex-direction: row-reverse;
-  overflow: hidden;
+  /* overflow: hidden; */
   gap: 100px;
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   /* position: relative; */
 }
 .review .reviewDetail {
   overflow: hidden;
-  display: flex;
-  width: 50%;
-  /* padding-left: 100px; */
-  flex-direction: column;
-  justify-content: center;
   position: relative;
 }
+
 .reviewDetail h2 {
+  padding-top: 100px;
   font-size: 50px;
   font-weight: bold;
   line-height: 1.2;
+  width: 100%;
 }
 .reviewDetail p {
-  width: 300px;
+  display: block;
 }
 .reviewDetail b {
-  color: var(--shadeOrange);
+  color: var(--indianKhaki);
 }
 .review .reviewImg {
-  width: 50%;
+  width: 52%;
   object-fit: contain;
+}
+.review .reviewImgSlide {
+  /* overflow: hidden; */
+  /* object-fit: cover; */
 }
 .review .reviewImgSlide img {
   width: 100%;
@@ -37,7 +40,7 @@
 .review .next2,
 .review .prev2 {
   position: absolute;
-  top: 100%;
+  top: 70%;
 }
 .review .next2 {
   left: 55%;

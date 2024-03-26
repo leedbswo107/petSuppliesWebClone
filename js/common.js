@@ -13,31 +13,28 @@ let productSlide = new Swiper('.productSlide', {
   // },
 });
 let reviewImgSlide = new Swiper('.reviewImgSlide', {
-  slidesPerView: 1,
-  spaceBetween: 30,
   effect: 'fade',
   loop: true,
   navigation: {
     nextEl: '.next2',
     prevEl: '.prev2',
   },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  // },
 });
 let reviewSlide = new Swiper('.reviewSlide', {
-  spaceBetween: 30,
-  slidesPerView: 1,
   loop: true,
-  navigation: {
-    nextEl: '.next2',
-    prevEl: '.prev2',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+  slidesPerView: 1,
+  // navigation: {
+  //   nextEl: '.next2',
+  //   prevEl: '.prev2',
+  // },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  // },
 });
 reviewImgSlide.controller.control = reviewSlide;
 reviewSlide.controller.control = reviewImgSlide;
