@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PetSuppiesWeb</title>
+    <title>PetSuppliesWeb</title>
     <link rel="stylesheet" href="./css/my_reset.css" />
     <link
       rel="stylesheet"
@@ -84,7 +84,7 @@
                 </li>
               </ul>
               <a href="#">
-                <input type="text" />
+                <input type="text" placeholder="Search" />
                 <img src="./img/search.svg" alt="search"
               /></a>
               <a href="#"
@@ -118,7 +118,9 @@
 
       <main>
         <button class="reward"><span>Rewards</span></button>
-        <button class="top"><span>TOP</span></button>
+        <button class="top" onclick="topFunction()" title="Go top">
+          <span>TOP</span>
+        </button>
         <!-- section mainVisual -->
         <section class="mainVisual">
           <div class="mainBanner mw">
@@ -485,9 +487,9 @@
                 </li>
               </ul>
               <!-- css 작성하면서 위치 변경 예정 -->
+              <div class="swiper-button-next next2"></div>
+              <div class="swiper-button-prev prev2"></div>
             </div>
-            <div class="swiper-button-next next2"></div>
-            <div class="swiper-button-prev prev2"></div>
           </div>
           <div class="reviewImg">
             <div class="swiper reviewImgSlide">

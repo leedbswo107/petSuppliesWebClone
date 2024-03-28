@@ -5,6 +5,7 @@
   padding-top: 50%;
   background-image: url('../../img/mainBanner.png');
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 .mainBanner > div {
@@ -52,5 +53,10 @@
   }
   .mainBanner > div p {
     display: none;
+  }
+}
+@media (max-width: 540px) {
+  .mainBanner h2 {
+    font-size: 2rem;
   }
 }
