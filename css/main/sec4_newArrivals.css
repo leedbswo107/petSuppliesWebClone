@@ -161,9 +161,6 @@
   height: 2rem;
   width: 3rem;
   background-image: url('../../img/arrow-right.svg');
-  /* font-family: 'Font Awesome 6 Free';
-  font-weight: 900;
-  font-size: 2rem; */
 }
 .newArrivals .prev1 {
   left: calc(50% - 20px);
@@ -182,6 +179,6 @@
 
 @media (max-width: 540px) {
   .newArrivals {
-    padding: 1rem 1rem 3rem 1rem;
+    padding: 1rem 3rem 3rem 3rem;
   }
 }
