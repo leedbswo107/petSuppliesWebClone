@@ -20,6 +20,13 @@
   width: 100%;
   white-space: nowrap;
 }
+.reviewDetail .reviewSlide {
+  position: relative;
+  overflow: visible;
+}
+.reviewDetail .reviewSlide li {
+  padding: 54px 0;
+}
 .reviewDetail p {
   display: block;
   /* white-space: nowrap; */
@@ -42,13 +49,13 @@
 .review .next2,
 .review .prev2 {
   position: absolute;
-  top: 70%;
+  top: 100%;
 }
 .review .next2 {
-  left: 55%;
+  left: 50px;
 }
 .review .prev2 {
-  left: 45%;
+  left: 0;
 }
 
 @media (max-width: 1210px) {
