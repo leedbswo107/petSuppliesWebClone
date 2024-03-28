@@ -147,13 +147,13 @@
 .newArrivals .next1,
 .newArrivals .prev1 {
   position: absolute;
-  top: 90%;
+  top: 95%;
   width: 2rem;
   color: black;
   transition: 0.3s;
 }
 .newArrivals .next1 {
-  left: 53%;
+  left: calc(50% + 20px);
 }
 .newArrivals .next1::after {
   content: '';
@@ -166,7 +166,7 @@
   font-size: 2rem; */
 }
 .newArrivals .prev1 {
-  left: 47%;
+  left: calc(50% - 20px);
 }
 .newArrivals .prev1::after {
   content: '';
@@ -178,4 +178,10 @@
 .newArrivals .prev1:hover,
 .newArrivals .next1:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 540px) {
+  .newArrivals {
+    padding: 1rem 1rem 3rem 1rem;
+  }
 }

@@ -1,16 +1,6 @@
 @charset 'utf-8';
 
-/* every */
-
 :root {
-  --rope: #915419;
-  --white: #ffffff;
-  --springWood: #f6f7ef;
-  --indianKhaki: #c6ae92;
-  --shadeOrange: #ffa395;
-  --lightBeige: #f5ead9;
-  --ivory: #fef7f1;
-  --sorrellBrown: #ceb198;
   /* 
     컬러는 순서대로
     1. 헤더 배경 컬러
@@ -22,12 +12,90 @@
     7. footer 영역 이메일 input 테그 배경 컬러
     8. founderVision 라인
   */
+
+  --rope: #915419;
+  --white: #ffffff;
+  --springWood: #f6f7ef;
+  --indianKhaki: #c6ae92;
+  --shadeOrange: #ffa395;
+  --lightBeige: #f5ead9;
+  --ivory: #fef7f1;
+  --sorrellBrown: #ceb198;
+  --scrollPink: #fedee0;
+
   text-transform: capitalize;
+  width: 100%;
+}
+.wrap {
+  overflow: hidden;
 }
 .mw {
   padding: 0 100px;
+  min-width: 540px;
   /* min-width: calc(100% - 200px); */
   /* min-width: 1100px; */
+}
+main {
+  position: relative;
+}
+main .reward::before {
+  content: '';
+  /* position: relative; */
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: url('../img/reward.svg');
+}
+main .reward {
+  position: fixed;
+  left: 1.5rem;
+  bottom: 3rem;
+  z-index: 999;
+  font-size: 1rem;
+  background-color: var(--lightBeige);
+  border-color: transparent;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+main .reward span {
+  padding-left: 0.5rem;
+}
+
+main .top {
+  position: fixed;
+  right: 0;
+  height: 2rem;
+  width: 5rem;
+  top: 50%;
+  transform-origin: center;
+  transform: rotate(-90deg) translateY(-50%);
+  z-index: 999;
+  border-color: transparent;
+  background-color: var(--scrollPink);
+  padding-right: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  align-items: center;
+  transition: 0.3s;
+}
+main .top::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+
+  background-image: url('../img/arrow-right.svg');
+  background-size: cover;
+}
+main .top span {
+  font-size: 14px;
+  padding-right: 5px;
 }
 /* 
   .brands > span 
