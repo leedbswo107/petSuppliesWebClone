@@ -1,5 +1,7 @@
 .hd .inner:nth-of-type(2) {
   background-color: var(--rope);
+  transition: 0.3s;
+  height: 43px;
 }
 .utilHeader {
   color: var(--white);
@@ -9,10 +11,13 @@
   align-items: center;
   text-transform: none;
   font-weight: lighter;
+  transition: 0.3s;
+  height: 43px;
 }
 .utilHeader p {
   display: inline-block;
   white-space: nowrap;
+  line-height: 1;
   padding: 0.75em 0;
 }
 .utilHeader .person {
