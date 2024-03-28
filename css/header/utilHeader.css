@@ -1,8 +1,8 @@
-.hd .inner:nth-of-type(2) {
+/* .hd .inner .utilHeader {
   background-color: var(--rope);
   transition: 0.3s;
   height: 43px;
-}
+} */
 .utilHeader {
   color: var(--white);
   font-size: 0.875em;
@@ -13,6 +13,9 @@
   font-weight: lighter;
   transition: 0.3s;
   height: 43px;
+  background-color: var(--rope);
+  transition: 0.3s;
+  /* height: 43px; */
 }
 .utilHeader p {
   display: inline-block;
@@ -53,5 +56,10 @@
   }
   .utilHeader {
     justify-content: center;
+  }
+}
+@media (max-width: 540px) {
+  .utilHeader p {
+    font-size: 0.7rem;
   }
 }
