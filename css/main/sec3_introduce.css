@@ -4,8 +4,40 @@
 }
 .introduce h2 {
   font-size: 3.125rem;
+  transition: 0.3s;
 }
 .introduce p {
   padding-top: 1rem;
   font-size: 1.188rem;
+  transition: 0.3s;
+}
+
+@media (max-width: 1210px) {
+  .introduce h2 {
+    font-size: 2rem;
+  }
+  .introduce p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 990px) {
+  .introduce h2 {
+    font-size: 2rem;
+  }
+  .introduce p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .introduce p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 540px) {
+  .introduce h2 {
+    font-size: 1.5rem;
+  }
+  .introduce p {
+    display: none;
+  }
 }

@@ -18,9 +18,11 @@
   font-weight: bold;
   line-height: 1.2;
   width: 100%;
+  white-space: nowrap;
 }
 .reviewDetail p {
   display: block;
+  /* white-space: nowrap; */
 }
 .reviewDetail b {
   color: var(--indianKhaki);
@@ -47,4 +49,14 @@
 }
 .review .prev2 {
   left: 45%;
+}
+
+@media (max-width: 1210px) {
+  .reviewDetail h2 {
+    font-size: 40px;
+  }
+  .reviewDetail p,
+  .reviewDetail b {
+    font-size: 14px;
+  }
 }
