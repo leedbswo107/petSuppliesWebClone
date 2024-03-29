@@ -1,13 +1,15 @@
 const disappearHead = document.querySelector('.hd .inner .utilHeader');
 // .hd .inner:nth-of-type(2) disappear func
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) disappearHead.style.height = `0px`;
-  else disappearHead.style.height = '43px';
-});
+// window.addEventListener('scroll', () => {
+//   if (window.scrollY > 50) disappearHead.style.height = `0px`;
+//   else disappearHead.style.height = '43px';
+// });
 
 const btnTop = document.querySelector('.top');
 const topText = btnTop.querySelector('span');
 window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) disappearHead.style.height = `0px`;
+  else disappearHead.style.height = '43px';
   if (window.scrollY > window.innerHeight / 5) {
     btnTop.style.width = '5rem';
     btnTop.style.visibility = 'visible';
@@ -20,11 +22,10 @@ window.addEventListener('scroll', () => {
     topText.style.color = 'transparent';
   }
 });
-
-const topFunction = () => {
+btnTop.addEventListener('click', () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-};
+});
 
 let productSlide = new Swiper('.productSlide', {
   slidesPerView: '1',
