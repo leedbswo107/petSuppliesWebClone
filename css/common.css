@@ -1,5 +1,8 @@
 @charset 'utf-8';
 
+html {
+  scroll-behavior: smooth;
+}
 :root {
   /* 
     컬러는 순서대로
@@ -69,11 +72,12 @@ main .top {
   height: 2rem;
   width: 0;
   top: 50%;
-  transform-origin: right;
+  transform-origin: right center;
   transform: rotate(-90deg) translateY(-50%);
   z-index: 999;
   border-color: transparent;
-  background-color: transparent;
+  /* background-color: transparent; */
+  visibility: hidden;
   color: transparent;
   padding-right: 1.2rem;
   cursor: pointer;
