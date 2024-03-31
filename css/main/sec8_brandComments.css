@@ -1,31 +1,68 @@
 .brandComments {
-  padding: 102px 397px;
+  padding: 100px 0;
   display: flex;
-  flex-direction: column;
   text-align: center;
-  overflow: visible;
+  justify-content: center;
+}
+.brandComments .brandCommentsSlide {
+  position: relative;
+  /* overflow: visible; */
 }
 .brandComments span {
   font-size: 15px;
   color: var(--shadeOrange);
 }
 .brandComments p {
-  padding: 2rem 0;
   font-size: 34px;
 }
 .comments {
-  overflow: visible;
   position: relative;
+  overflow: visible;
+  width: 80%;
 }
 .comments .next3,
 .comments .prev3 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  color: var(--commentBtnColor);
+  z-index: 10000;
 }
 .comments .next3 {
-  left: calc(100% + 1rem);
+  right: 0;
 }
 .comments .prev3 {
-  left: -2rem;
+  left: 0;
+}
+.comments .brandCommentPagination {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+}
+.comments .brandCommentPagination > .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  background-color: var(--indianKhaki);
+}
+.comments .brandCommentPagination > .swiper-pagination-bullet:nth-of-type(1) {
+  margin-left: 0;
+}
+@media (max-width: 990px) {
+  .brandComments p {
+    font-size: 25px;
+  }
+  .comments .brandCommentPagination {
+    display: block;
+  }
+}
+@media (max-width: 700px) {
+  .brandComments p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .brandComments p {
+    font-size: 15px;
+  }
 }

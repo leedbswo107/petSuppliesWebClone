@@ -1,11 +1,9 @@
 .review {
   display: flex;
   flex-direction: row-reverse;
-  /* overflow: hidden; */
   gap: 100px;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  /* position: relative; */
 }
 .review .reviewDetail {
   overflow: hidden;
@@ -19,6 +17,7 @@
   line-height: 1.2;
   width: 100%;
   white-space: nowrap;
+  transition: 0.3s;
 }
 .reviewDetail .reviewSlide {
   position: relative;
@@ -29,7 +28,7 @@
 }
 .reviewDetail p {
   display: block;
-  /* white-space: nowrap; */
+  transition: 0.3s;
 }
 .reviewDetail b {
   color: var(--indianKhaki);
@@ -45,25 +44,109 @@
 .review .reviewImgSlide img {
   width: 100%;
 }
-
+.review .reviewPagination {
+  display: none;
+}
+.review .reviewPagination span {
+  width: 15px;
+  height: 2px;
+  background-color: gray;
+}
 .review .next2,
 .review .prev2 {
+  border: 1px solid black;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
   position: absolute;
   top: 100%;
+  background-size: contain;
+  transition: 0.3s;
+}
+.review .next2:hover,
+.review .prev2:hover {
+  opacity: 1;
+}
+.review .next2:not(:hover),
+.review .prev2:not(:hover) {
+  opacity: 0.5;
 }
 .review .next2 {
-  left: 50px;
+  left: 75px;
+  color: transparent;
+  background-image: url('../../img/arrow-right.svg');
 }
 .review .prev2 {
-  left: 0;
+  left: 25px;
+  color: transparent;
+  background-image: url('../../img/arrow-left.svg');
 }
-
-@media (max-width: 1210px) {
+/* @media (max-width: 1450px) {
   .reviewDetail h2 {
     font-size: 40px;
   }
   .reviewDetail p,
   .reviewDetail b {
     font-size: 14px;
+  }
+} */
+/* @media (max-width: 1300px) {
+  .reviewDetail h2 {
+    font-size: 39px;
+  }
+  .reviewDetail p,
+  .reviewDetail b {
+    font-size: 13px;
+  }
+} */
+@media (max-width: 1210px) {
+  .reviewDetail h2 {
+    font-size: 38px;
+  }
+  .reviewDetail p,
+  .reviewDetail b {
+    font-size: 12px;
+  }
+}
+/* @media (max-width: 1150px) {
+  .reviewDetail h2 {
+    font-size: 36px;
+  }
+  .reviewDetail p,
+  .reviewDetail b {
+    font-size: 10px;
+  }
+} */
+@media (max-width: 990px) {
+  .reviewImg {
+    display: none;
+  }
+  .reviewDetail {
+    text-align: center;
+  }
+  .reviewDetail h2 {
+    padding-top: 0;
+    font-size: 40px;
+  }
+  .reviewDetail p,
+  .reviewDetail b {
+    font-size: 14px;
+  }
+  .review .reviewPagination {
+    display: block;
+  }
+  .review .next2,
+  .review .prev2 {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .reviewDetail h2 {
+    padding-top: 0;
+    font-size: 40px;
+  }
+  .reviewDetail p,
+  .reviewDetail b {
+    font-size: 12px;
   }
 }

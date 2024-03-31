@@ -23,16 +23,18 @@
   position: relative;
 }
 .emailArea .inner {
+  width: 100%;
   position: absolute;
-  padding: 64px 0 64px 150px;
+  padding-left: 15%;
   left: 0;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .emailArea .inner h2 {
   font-size: 44px;
 }
 .emailArea .inner p {
-  padding: 40px 0;
+  padding: 5% 0;
   line-height: 1;
 }
 .emailArea .emailForm {
@@ -60,4 +62,26 @@
   padding: 0.5rem 1rem;
   border-style: none;
   font-size: 1rem;
+}
+
+@media (max-width: 1210px) {
+  .emailArea .inner h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 990px) {
+  .enterEmail .emailArea {
+    padding-top: 100%;
+    background-image: url('../../img/emailBannerMobile.png');
+  }
+  .emailArea .inner {
+    width: 60%;
+    /* color: var(--white); */
+    position: absolute;
+    top: calc(100% - 10rem);
+  }
+  .emailArea .inner h2 {
+    font-size: 30px;
+    color: var(--white);
+  }
 }
