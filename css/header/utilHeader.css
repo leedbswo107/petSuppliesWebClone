@@ -15,7 +15,9 @@
   height: 43px;
   background-color: var(--rope);
   transition: 0.3s;
-  /* height: 43px; */
+}
+.utilHeader.scrolled {
+  height: 0;
 }
 .utilHeader p {
   display: inline-block;
