@@ -4,18 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  /* 
-    컬러는 순서대로
-    1. 헤더 배경 컬러
-    2. 모든 화이트
-    3. 신상품 슬라이드 배경 컬러
-    4. 리뷰어 이름 폰트색 & 푸터 맨 아래 footcontact 배경 컬러
-    5. brandComments 의 in the press 폰트 색상
-    6. founderVision 배경 컬러
-    7. footer 영역 이메일 input 테그 배경 컬러
-    8. founderVision 라인
-  */
-
   --rope: #915419;
   --white: #ffffff;
   --springWood: #f6f7ef;
@@ -25,7 +13,7 @@ html {
   --ivory: #fef7f1;
   --sorrellBrown: #ceb198;
   --scrollPink: #fedee0;
-
+  --commentBtnColor: #d9d9d9;
   text-transform: capitalize;
   width: 100%;
 }
@@ -33,9 +21,9 @@ html {
   overflow-x: clip;
 }
 .mw {
+  /* min-width based on iPhon12 Pro Size */
   padding: 0 10%;
   min-width: 390px;
-  /* min-width based on iPhon12 Pro Size */
 }
 main {
   position: relative;
@@ -67,24 +55,31 @@ main .reward span {
 }
 
 main .top {
-  position: fixed;
-  right: 0;
-  height: 2rem;
   width: 0;
+  height: 2rem;
+  position: fixed;
   top: 50%;
+  right: 0;
   transform-origin: right center;
   transform: rotate(-90deg) translateY(-50%);
   z-index: 999;
   border-color: transparent;
-  /* background-color: transparent; */
+  background-color: transparent;
   visibility: hidden;
   color: transparent;
   padding-right: 1.2rem;
   cursor: pointer;
   align-items: center;
   transition: 0.3s;
+  overflow: hidden;
 }
-main .top::after {
+main .top.on {
+  background-color: var(--scrollPink);
+  color: black;
+  visibility: visible;
+  width: 5rem;
+}
+main .top.on::after {
   position: absolute;
   content: '';
   top: 50%;
@@ -95,14 +90,10 @@ main .top::after {
   background-size: cover;
   transition: 0.3s;
 }
-main .top:hover::after {
+main .top.on:hover::after {
   transform: translateY(-50%) translateX(3px);
 }
 main .top span {
   font-size: 14px;
   padding-right: 5px;
 }
-/* 
-  .brands > span 
-  text-transform: capitalize;
-*/
