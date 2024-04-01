@@ -1,6 +1,40 @@
 const disappearHead = document.querySelector('.utilHeader');
 const btnTop = document.querySelector('.top');
 const topText = btnTop.querySelector('span');
+const ham = document.querySelector('.ham');
+const gnb = document.querySelector('.gnb');
+// mobile header func
+ham.addEventListener('click', (e) => {
+  e.preventDefault();
+  ham.classList.toggle('on');
+  gnb.classList.toggle('on');
+  disappearHead.classList.toggle('scrolled');
+  document.body.classList.toggle('stop-scrolling');
+});
+gnb.addEventListener('click', (e) => {
+  const list = gnb.querySelectorAll('li');
+  let closestA = e.target.closest('a');
+  let closestLI = e.target.closest('li');
+  if (!closestLI) return;
+  if (closestA.parentElement.parentElement === gnb) {
+    e.preventDefault();
+  } else {
+    list.forEach((element) => {
+      element.classList.remove('on');
+    });
+    gnb.classList.remove('on');
+    ham.classList.remove('on');
+    disappearHead.classList.remove('scrolled');
+  }
+  list.forEach((item) => {
+    if (item !== closestLI) {
+      item.classList.remove('on');
+    }
+  });
+  if (closestLI) {
+    closestLI.classList.toggle('on');
+  }
+});
 
 // scroll event func
 window.addEventListener('scroll', () => {
@@ -17,20 +51,56 @@ btnTop.addEventListener('click', () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
 
+// footer func
+const clickedStrong = document.querySelectorAll('.footInfo strong');
+const footInner = document.querySelectorAll('.footInfo .inner');
+clickedStrong.forEach((item, index) => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault;
+    footInner.forEach((element, i) => {
+      if (e.target !== clickedStrong[i]) {
+        clickedStrong[i].classList.remove('on');
+        element.classList.remove('on');
+      } else return;
+    });
+    item.classList.toggle('on');
+    footInner[index].classList.toggle('on');
+  });
+});
+
 // slider func
 // product, review, reviewImg, brandComment, designProduct, brand
 let brandSlide = new Swiper('.brandSlide', {
-  slidesPerView: 6,
+  slidesPerView: 1,
   spaceBetween: 20,
+  centeredSlides: true,
   speed: 11000,
   loop: true,
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    541: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    700: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    991: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+    1211: {
+      slidesPerView: 6,
+      spaceBetween: 20,
+    },
+  },
 });
 let productSlide = new Swiper('.productSlide', {
-  slidesPerView: '1',
+  slidesPerView: 1,
   spaceBetween: 10,
   centeredSlides: true,
   loop: true,
@@ -62,10 +132,10 @@ let reviewImgSlide = new Swiper('.reviewImgSlide', {
   },
 });
 let reviewSlide = new Swiper('.reviewSlide', {
-  autoHeight: true,
-  spaceBetween: 10,
   loop: true,
+  autoHeight: true,
   slidesPerView: 1,
+  spaceBetween: 10,
   pagination: {
     el: '.reviewPagination',
   },
@@ -74,7 +144,6 @@ reviewImgSlide.controller.control = reviewSlide;
 reviewSlide.controller.control = reviewImgSlide;
 
 let brandCommentSlide = new Swiper('.brandCommentSlide', {
-  // centeredSlides: true,
   loop: true,
   slidesPerView: 1,
   navigation: {
@@ -86,7 +155,7 @@ let brandCommentSlide = new Swiper('.brandCommentSlide', {
   },
 });
 let designProductSlide = new Swiper('.designProductSlide', {
-  slidesPerView: '1',
+  slidesPerView: 1,
   navigation: {
     nextEl: '.next4',
     prevEl: '.prev4',
