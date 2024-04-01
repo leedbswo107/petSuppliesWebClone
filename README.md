@@ -45,6 +45,5 @@
 
 ## :warning: 해결해야하는 부분
 
-- 헤더 Global Navigation Bar의 하위 Sub list 의 등장이 한줄로 나오는게 아니라 그리드를 활용한 이미지, 텍스트 구성을 구현해야한다.
-- review section에서 리뷰의 길이(height) 에 맞게 prev, next 버튼의 위치가 변하게 구현하자.
+- review section에서 리뷰의 길이(height) 에 맞게 prev, next 버튼의 위치가 변하게 구현하자. (autoHeight 로 구현)
 - top 버튼속 arrow 이미지가 가상태그속에 있어 버튼이 나오지 않는 영역으로 이동하면 자연스럽게 사라지게 구현해야하는데 현재 매끄럽지 않다.
