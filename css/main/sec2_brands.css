@@ -9,9 +9,9 @@
   display: flex;
   justify-content: center;
 }
-
-@media (max-width: 1210px) {
-  .brands a img {
-    width: 70%;
-  }
+.brands a img {
+  height: 100%;
+}
+.brandSlide > .swiper-wrapper {
+  transition-timing-function: linear;
 }
