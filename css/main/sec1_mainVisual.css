@@ -10,7 +10,6 @@
 }
 .mainBanner > div {
   position: absolute;
-  /* width: 18%; */
   top: 50%;
   transform: translateY(-50%);
 }
@@ -24,8 +23,6 @@
   padding: 12px 0;
 }
 .mainBanner a {
-  /* position: absolute; */
-  /* top: calc(100% + 1rem); */
   border: 2px solid var(--white);
   border-radius: 5px;
   padding: 0.5rem 1rem;
