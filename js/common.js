@@ -3,11 +3,32 @@ const btnTop = document.querySelector('.top');
 const topText = btnTop.querySelector('span');
 const ham = document.querySelector('.ham');
 const gnb = document.querySelector('.gnb');
+
+// scroll event func
+window.addEventListener('scroll', () => {
+  if (parseInt(window.scrollY) === 0)
+    disappearHead.classList.remove('scrolled');
+  else disappearHead.classList.add('scrolled');
+  if (window.scrollY > window.innerHeight / 5) btnTop.classList.add('on');
+  else btnTop.classList.remove('on');
+});
+
 // mobile header func
 ham.addEventListener('click', (e) => {
   e.preventDefault();
   ham.classList.toggle('on');
   gnb.classList.toggle('on');
+  let isContain = ham.classList.contains('on');
+  console.log(btnTop.classList);
+  if (btnTop.classList.contains('on')) {
+    if (isContain === true) {
+      btnTop.classList.remove('on');
+      btnTop.classList.add('off');
+    } else {
+      btnTop.classList.remove('off');
+      btnTop.classList.add('on');
+    }
+  }
   disappearHead.classList.toggle('scrolled');
   document.body.classList.toggle('stop-scrolling');
 });
@@ -24,7 +45,6 @@ gnb.addEventListener('click', (e) => {
     });
     gnb.classList.remove('on');
     ham.classList.remove('on');
-    disappearHead.classList.remove('scrolled');
   }
   list.forEach((item) => {
     if (item !== closestLI) {
@@ -34,15 +54,6 @@ gnb.addEventListener('click', (e) => {
   if (closestLI) {
     closestLI.classList.toggle('on');
   }
-});
-
-// scroll event func
-window.addEventListener('scroll', () => {
-  if (parseInt(window.scrollY) === 0)
-    disappearHead.classList.remove('scrolled');
-  else disappearHead.classList.add('scrolled');
-  if (window.scrollY > window.innerHeight / 5) btnTop.classList.add('on');
-  else btnTop.classList.remove('on');
 });
 
 // go top event func
