@@ -72,5 +72,5 @@
 ## 참고 사이트
 
 [swiper] <https://swiperjs.com/>  
-[figma] <https://www.figma.com/community/file/1342046467033602215/free-business-website-for-pets>
-[mdn] <https://developer.mozilla.org/ko/>
+[mdn] <https://developer.mozilla.org/ko/>  
+[figma] <https://www.figma.com/community/file/1342046467033602215/free-business-website-for-pets>  
