@@ -36,9 +36,6 @@
   .searchAndShopping > a {
     padding: 0;
   }
-  .searchAndShopping > a input {
-    padding: 0.5rem 1rem;
-  }
   .sub li {
     padding: 1rem 2rem 1rem 1rem;
     white-space: nowrap;
@@ -245,5 +242,8 @@
   }
   .mainHead h1 svg {
     height: 15px;
+  }
+  .searchAndShopping > a input {
+    padding: 0.5rem 1rem;
   }
 }
