@@ -3,14 +3,6 @@
 - 디자이너로부터 figma 를 사용한 웹 사이트 시안을 받았다.
 - HTML, CSS 를 작성해보자.
 
-## :airplane: 결과
-
-[시안출처] : <https://www.figma.com/community/file/1342046467033602215/free-business-website-for-pets>
-
-[구현링크] : <https://leedbswo107.github.io/petSuppliesWebClone/>
-
-![펫 용품 웹사이트 클론코딩](./petSuppliesWebClone.png)
-
 ## :clipboard: 구현할 기능 목록
 
 - 반응형으로 디자인 적용.
@@ -43,6 +35,10 @@
   ham 요소 클릭 이벤트 발생시 utilHeader의 높이를 제어해 안 보이게 하는 기능 추가
   </br>ham 요소 클릭 후 열린 gnb 의 z-index 값을 top 보다 높여버려도 가능
   </span>
+
+## :airplane: 결과
+
+<https://leedbswo107.github.io/petSuppliesWebClone/>
 
 ## :file_folder: 파일 구조 및 파일명
 
@@ -77,3 +73,4 @@
 
 [swiper] <https://swiperjs.com/>  
 [mdn] <https://developer.mozilla.org/ko/>  
+[figma] <https://www.figma.com/community/file/1342046467033602215/free-business-website-for-pets>  
