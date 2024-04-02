@@ -15,19 +15,18 @@
 .snsLink span {
   display: block;
 }
-
 .enterEmail .emailArea {
   padding-top: 25%;
   background-image: url('../../img/emailBanner.png');
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 .emailArea .inner {
-  width: 100%;
-  position: absolute;
-  padding-left: 15%;
   left: 0;
   top: 50%;
+  width: 100%;
+  position: absolute;
   transform: translateY(-50%);
 }
 .emailArea .inner h2 {
@@ -37,28 +36,28 @@
   padding: 5% 0;
   line-height: 1;
 }
-.emailArea .emailForm {
+.emailForm {
   display: inline-block;
   position: relative;
 }
-.emailArea .emailForm img {
+.emailForm img {
   width: 1.5rem;
 }
-.emailArea .emailForm .emailBtn {
-  position: absolute;
+.emailForm .emailBtn {
   background-color: transparent;
   border: none;
+  cursor: pointer;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
+  position: absolute;
   align-self: center;
   transition: 0.3s;
+  transform: translateY(-50%);
 }
-.emailArea .emailForm .emailBtn:hover {
+.emailForm .emailBtn:hover {
   transform: translateY(-50%) translateX(2px);
 }
-.emailArea .emailForm input {
+.emailForm input {
   padding: 0.5rem 1rem;
   border-style: none;
   font-size: 1rem;
