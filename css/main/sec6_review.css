@@ -9,13 +9,12 @@
   overflow: hidden;
   position: relative;
 }
-
 .reviewDetail h2 {
-  padding-top: 100px;
+  width: 100%;
   font-size: 50px;
   font-weight: bold;
   line-height: 1.2;
-  width: 100%;
+  padding-top: 100px;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -37,10 +36,6 @@
   width: 52%;
   object-fit: contain;
 }
-.review .reviewImgSlide {
-  /* overflow: hidden; */
-  /* object-fit: cover; */
-}
 .review .reviewImgSlide img {
   width: 100%;
 }
@@ -60,6 +55,7 @@
   border-radius: 50%;
   position: absolute;
   top: 100%;
+  color: transparent;
   background-size: contain;
   transition: 0.3s;
 }
@@ -73,32 +69,12 @@
 }
 .review .next2 {
   left: 75px;
-  color: transparent;
   background-image: url('../../img/arrow-right.svg');
 }
 .review .prev2 {
   left: 25px;
-  color: transparent;
   background-image: url('../../img/arrow-left.svg');
 }
-/* @media (max-width: 1450px) {
-  .reviewDetail h2 {
-    font-size: 40px;
-  }
-  .reviewDetail p,
-  .reviewDetail b {
-    font-size: 14px;
-  }
-} */
-/* @media (max-width: 1300px) {
-  .reviewDetail h2 {
-    font-size: 39px;
-  }
-  .reviewDetail p,
-  .reviewDetail b {
-    font-size: 13px;
-  }
-} */
 @media (max-width: 1210px) {
   .reviewDetail h2 {
     font-size: 38px;
@@ -108,15 +84,6 @@
     font-size: 12px;
   }
 }
-/* @media (max-width: 1150px) {
-  .reviewDetail h2 {
-    font-size: 36px;
-  }
-  .reviewDetail p,
-  .reviewDetail b {
-    font-size: 10px;
-  }
-} */
 @media (max-width: 990px) {
   .reviewImg {
     display: none;

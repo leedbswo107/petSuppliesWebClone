@@ -43,8 +43,8 @@
 }
 .adBanner a:hover {
   opacity: 0.5;
-  border-color: var(--shadeOrange);
   color: var(--shadeOrange);
+  border-color: var(--shadeOrange);
 }
 @media (max-width: 1210px) {
   .adBanner h2 {

@@ -7,11 +7,9 @@
 }
 .footInfo > div {
   display: inline-block;
-  /* width: 100%; */
 }
 .footInfo .inner > * {
   display: block;
-  /* height: auto; */
   padding-bottom: 1rem;
 }
 .footInfo > div a:last-of-type {
@@ -21,31 +19,24 @@
   font-size: 19px;
   font-weight: bold;
 }
-.customerCareOne .inner > * {
-  padding-bottom: 12px;
-}
-.foot .footInfo .customerCareOne .contactInfo {
-  padding-bottom: 0;
-}
 .customerCareOne .snsList {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  position: relative;
 }
-
 .customerCareOne .contactInfo {
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.customerCareOne .contactInfo a {
+.contactInfo a {
   display: flex;
   align-items: center;
   font-size: 16px;
   padding-bottom: 9px;
 }
-.customerCareOne .contactInfo a span {
+.contactInfo a span {
   padding-left: 8px;
 }
 .foot .footContact {
@@ -55,7 +46,7 @@
   justify-content: space-between;
   font-size: 16px;
 }
-.foot .footContact .contactList {
+.foot .contactList {
   padding: 10px 0;
 }
 .contactList a {
@@ -90,9 +81,6 @@
     position: relative;
     cursor: pointer;
   }
-  .footInfo strong.on::after {
-    transform: rotate(90deg);
-  }
   .footInfo strong::after {
     content: '\f105';
     position: absolute;
@@ -100,6 +88,9 @@
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     transition: 0.3s;
+  }
+  .footInfo strong.on::after {
+    transform: rotate(90deg);
   }
   .footInfo div > .inner {
     visibility: hidden;

@@ -86,9 +86,6 @@
     white-space: nowrap;
     transition: 0.3s;
   }
-  .hd div > ul > li:hover > a {
-    color: var(--shadeOrange);
-  }
   .hd div > ul > li > a::after {
     content: '\f107';
     font-family: 'Font Awesome 6 Free';
@@ -98,6 +95,9 @@
     transform-origin: center;
     transform: rotate(0deg);
     transition: 0.3s;
+  }
+  .hd div > ul > li:hover > a {
+    color: var(--shadeOrange);
   }
   .hd div > ul > li:hover > a::after {
     transform-origin: center;
@@ -202,6 +202,9 @@
     display: none;
     position: fixed;
   }
+  .gnb.on {
+    display: block;
+  }
   .hd .gnb a {
     display: block;
     padding: 1rem;
@@ -231,9 +234,6 @@
   .gnb .sub a {
     padding: 0.8rem 0.8rem 0.8rem 3rem;
     font-size: 1.1rem;
-  }
-  .gnb.on {
-    display: block;
   }
   .ham {
     display: flex;
