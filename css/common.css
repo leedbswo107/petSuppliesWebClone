@@ -15,7 +15,6 @@ html {
   --scrollPink: #fedee0;
   --commentBtnColor: #d9d9d9;
   text-transform: capitalize;
-  width: 100%;
 }
 .wrap {
   overflow-x: clip;
@@ -35,7 +34,6 @@ main {
 }
 main .reward::before {
   content: '';
-  /* position: relative; */
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -58,7 +56,6 @@ main .reward {
 main .reward span {
   padding-left: 0.5rem;
 }
-
 main .top {
   width: 0;
   height: 2rem;
@@ -77,6 +74,10 @@ main .top {
   align-items: center;
   transition: 0.3s;
   overflow: hidden;
+}
+main .top span {
+  font-size: 14px;
+  padding-right: 5px;
 }
 main .top.on {
   background-color: var(--scrollPink);
@@ -98,7 +99,6 @@ main .top.on::after {
 main .top.on:hover::after {
   transform: translateY(-50%) translateX(3px);
 }
-main .top span {
-  font-size: 14px;
-  padding-right: 5px;
+main .top.off {
+  display: none;
 }
