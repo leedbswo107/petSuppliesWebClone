@@ -3,6 +3,7 @@ const btnTop = document.querySelector('.top');
 const topText = btnTop.querySelector('span');
 const ham = document.querySelector('.ham');
 const gnb = document.querySelector('.gnb');
+const searchAndShoppingA = document.querySelectorAll('.searchAndShopping > a');
 
 // scroll event func
 window.addEventListener('scroll', () => {
@@ -54,6 +55,11 @@ gnb.addEventListener('click', (e) => {
   if (closestLI) {
     closestLI.classList.toggle('on');
   }
+});
+searchAndShoppingA.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+  });
 });
 
 // go top event func
