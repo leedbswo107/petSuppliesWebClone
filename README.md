@@ -9,7 +9,7 @@
 
 [구현링크] : <https://leedbswo107.github.io/petSuppliesWebClone/>
 
-![펫 용품 웹사이트 클론코딩](./petSuppliesWebClone.png)
+<img src="./petSuppliesWebClone.png" width="50%"/>
 
 ## :clipboard: 구현할 기능 목록
 
@@ -48,8 +48,30 @@
 
 - :open_file_folder: petSuppliesWebClone
   - :open_file_folder: img
-    <!-- - :memo: -->
+  - :open_file_folder: js
+    - :memo: common.js
+    - :memo: svgfiles.js
   - :open_file_folder: css
+    - :open_file_folder: header
+      - :memo: gnb.css
+      - :memo: utilHeader.css
+    - :open_file_folder: main
+      - :memo: sec1_mainVisual.css
+      - :memo: sec2_brands.css
+      - :memo: sec3_introduce.css
+      - :memo: sec4_newArrivals.css
+      - :memo: sec5_category.css
+      - :memo: sec6_review.css
+      - :memo: sec7_ad.css
+      - :memo: sec8_brandComments.css
+      - :memo: sec9_founderComments.css
+      - :memo: sec10_designProducts.css
+      - :memo: sec11_enterEmail.css
+    - :open_file_folder: footer
+      - :memo: foot.css
+    - :memo: common.css
+    - :memo: cssLink.css
+    - :memo: my_reset.css
   - :memo: index.html
 
 ## :book: 커밋 컨벤션
@@ -76,4 +98,4 @@
 ## 참고 사이트
 
 [swiper] <https://swiperjs.com/>  
-[mdn] <https://developer.mozilla.org/ko/>  
+[mdn] <https://developer.mozilla.org/ko/>
