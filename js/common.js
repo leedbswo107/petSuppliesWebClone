@@ -20,7 +20,6 @@ ham.addEventListener('click', (e) => {
   ham.classList.toggle('on');
   gnb.classList.toggle('on');
   let isContain = ham.classList.contains('on');
-  console.log(btnTop.classList);
   if (btnTop.classList.contains('on')) {
     if (isContain === true) {
       btnTop.classList.remove('on');
@@ -73,7 +72,7 @@ const clickedStrong = document.querySelectorAll('.footInfo strong');
 const footInner = document.querySelectorAll('.footInfo .inner');
 clickedStrong.forEach((item, index) => {
   item.addEventListener('click', (e) => {
-    e.preventDefault;
+    e.preventDefault();
     footInner.forEach((element, i) => {
       if (e.target !== clickedStrong[i]) {
         clickedStrong[i].classList.remove('on');
