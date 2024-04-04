@@ -1,7 +1,15 @@
 # 펫 용품 웹사이트 클론코딩 :dog:
 
 - 디자이너로부터 figma 를 사용한 웹 사이트 시안을 받았다.
-- HTML, CSS 를 작성해보자.
+- HTML, CSS, JS 를 작성해보자.
+
+## :gem: 사용한 기술
+
+![html5](https://img.shields.io/badge/html5-E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
+![css3](https://img.shields.io/badge/css3-1572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
+![javascript](https://img.shields.io/badge/javascript-F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=white)
+![swiper](https://img.shields.io/badge/swiper-6332F6.svg?&style=for-the-badge&logo=swiper&logoColor=white)
+![npm](https://img.shields.io/badge/npm-CB3837.svg?&style=for-the-badge&logo=npm&logoColor=white)
 
 ## :airplane: 결과
 
@@ -20,37 +28,23 @@
 
 ## :warning: 해결해야하는 부분
 
-- review section에서 <b>리뷰의 길이(height)</b> 에 맞게 prev, next 버튼의 위치가 변하게 구현하자. </br>
-  <span style="color:yellow">
-  autoHeight 추가
-  </span>
-- <b>top 버튼속 arrow 이미지</b>가 가상태그속에 있어 버튼이 나오지 않는 영역으로 이동하면 자연스럽게 사라지게 구현해야하는데 현재 매끄럽지 않다.</br>
-  <span style="color:yellow">
-  style을 css에서 미리 클래스화 하여 그것을 JS로 컨트롤
-  </span>
-- 상단 브랜드 로고 슬라이드가 일정한 속도로 멈추지 않고 움직이게 구현해야하는데 일정 거리를 움직이고 멈추고를 반복하는 문제가 있다. 일정한 속도로 끊임없이 움직이는 슬라이드를 구현하자.</br>
-  <span style="color:yellow">
-  swiper-wrapper 속 transition-timing-function 프로퍼티값을 linear로 변경
-  </span>
-
-- <b>header의 utilHeader</b> 영역이 스크롤하면 사라지게 구현하자.</br>
-  <span style="color:yellow">
-  window의 프로퍼티 scrollY와 innerHeight를 이용한 조건문을 통한 제어
-  </span>
-
-- <b>mobile 환경</b>에서 햄버거 버튼 클릭시 header의 utilHeader 영역이 상단을 가리지 않게 구현하자.</br>
-  <span style="color:yellow">
-  ham 요소 클릭 이벤트 발생시 utilHeader의 높이를 제어해 안 보이게 하는 기능 추가
-  </br>ham 요소 클릭 후 열린 gnb 의 z-index 값을 top 보다 높여버려도 가능
-  </span>
+| 문제 사진                        | 문제 내용                                                                                    | 해결                                                                                                                                               |
+| -------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="./img/problem1.jpeg"/> | review section <b>리뷰의 높이(height)</b> 에 맞게 버튼의 height값이 변하게 구현              | autoHeight 추가                                                                                                                                    |
+| <img src="./img/problem3.png"/>  | 상단 브랜드 로고 슬라이드의 속도가 일정하게 구현                                             | swiper-wrapper 속 transition-timing-function 값을 linear로 변경                                                                                    |
+| <img src="./img/problem2.png"/>  | <b>top 버튼속 arrow 이미지</b>가 자연스럽게 사라지게 구현                                    | style을 css에서 미리 클래스화 하여 그것을 JS로 컨트롤                                                                                              |
+| <img src="./img/problem4.png"/>  | <b>header의 utilHeader</b> 영역이 스크롤하면 사라지게 구현                                   | window의 프로퍼티 scrollY와 innerHeight를 이용한 조건문을 통한 제어                                                                                |
+| <img src="./img/problem5.png"/>  | <b>mobile 환경</b>에서 햄버거 버튼 클릭시 header의 utilHeader 영역이 상단을 가리지 않게 구현 | ham 요소 클릭 이벤트 발생시 utilHeader의 높이를 제어해 안 보이게 하는 기능 추가 ham 요소 클릭 후 열린 gnb 의 z-index 값을 top 보다 높여버려도 가능 |
 
 ## :file_folder: 파일 구조 및 파일명
 
 - :open_file_folder: petSuppliesWebClone
+  - :memo: index.html
   - :open_file_folder: img
   - :open_file_folder: js
     - :memo: common.js
     - :memo: svgfiles.js
+    - :memo: swiper.js
   - :open_file_folder: css
     - :open_file_folder: header
       - :memo: gnb.css
@@ -72,7 +66,6 @@
     - :memo: common.css
     - :memo: cssLink.css
     - :memo: my_reset.css
-  - :memo: index.html
 
 ## :book: 커밋 컨벤션
 
