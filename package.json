@@ -1,0 +1,23 @@
+{
+  "name": "pet-supplies-web-clone",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "js/common.js",
+  "description": "- 디자이너로부터 figma 를 사용한 웹 사이트 시안을 받았다. - HTML, CSS 를 작성해보자.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leedbswo107/petSuppliesWebClone.git"
+  },
+  "keywords": [
+    "petSuppliesWeb"
+  ],
+  "author": "Michael Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leedbswo107/petSuppliesWebClone/issues"
+  },
+  "homepage": "https://github.com/leedbswo107/petSuppliesWebClone#readme"
+}
