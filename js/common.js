@@ -47,7 +47,9 @@ gnb.addEventListener('click', (e) => {
     ham.classList.remove('on');
   }
   list.forEach((item) => {
-    item.classList.remove('on');
+    if (item !== closestLI) {
+      item.classList.remove('on');
+    }
   });
   closestLI.classList.toggle('on');
 });
