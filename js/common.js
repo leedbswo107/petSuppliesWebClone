@@ -8,7 +8,6 @@ import {
 } from './swiper.js';
 const disappearHead = document.querySelector('.utilHeader');
 const btnTop = document.querySelector('.top');
-const topText = btnTop.querySelector('span');
 const ham = document.querySelector('.ham');
 const gnb = document.querySelector('.gnb');
 const searchAndShoppingA = document.querySelectorAll('.searchAndShopping > a');
